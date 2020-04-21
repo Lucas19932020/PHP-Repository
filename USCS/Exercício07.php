@@ -7,14 +7,12 @@
   <body>
     <h1> Tamanho de Chico e Juca </h1>
 <?php
-    $Ano=1;
+    $Ano=0;
     do{
-      $Chico=1.5+0.02*$Ano;
-      $Juca=1.1+0.03*$Ano;
+      $Chico = 1.5+0.02*$Ano;
+      $Juca= 1.1+0.03*$Ano;
       $Ano++;
-    }while($Juca<$Chico);
-    echo $Chico . " ";
-    echo $Juca. " ";
+    }while($Juca < $Chico);
     Echo "São necessários $Ano para que Juca seja maior que Chico";
   ?>
 

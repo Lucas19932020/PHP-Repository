@@ -7,7 +7,7 @@
   <body>
     <h1> Soma e Quantidade </h1>
     <?php
-    $Entrada = -200;
+    $Entrada = 1;
     $Ci = 0;
     $Somap = 0;
     for ($i=$Entrada;$i<=($Entrada+430);$i++){

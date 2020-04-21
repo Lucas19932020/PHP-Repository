@@ -8,7 +8,7 @@
 <body>
   <h1> Calculo Fatorial </h1>
     <?php
-    $Entrada = 0;
+    $Entrada = 1;
     $Fatorial = 1;
     Echo "$Entrada! = ";
     if($Entrada == 0){
