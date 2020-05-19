@@ -19,6 +19,8 @@
             echo "Nadador categoria juvenil B";
         else if($idade >= 18)
             echo "Nadador categoria adulto";
+        else 
+            echo "Idade inválida";
     ?>
 </body>
 </html>

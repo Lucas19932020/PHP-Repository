@@ -9,7 +9,7 @@
     <?php
         $a = $_GET["valor"];
 
-        if($a ==0)
+        if($a == 0)
            echo "$a é um valor neutro";
         else if($a % 2 == 0){
             echo "$a é par ";
