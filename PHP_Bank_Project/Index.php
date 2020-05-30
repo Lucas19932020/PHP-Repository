@@ -46,6 +46,7 @@
         $_SESSION['excluirRegistroCerto'] = "";
         $_SESSION['excluirRegistroErro'] = "";
         $_SESSION['Inicio'] = "Sessão Iniciada";
+        $_SESSION['_53cr37'] = "";
         ?>
         <div class='container'>
             <div class='row'>

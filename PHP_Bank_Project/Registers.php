@@ -50,6 +50,7 @@ Session_Start();
 
             if($_SESSION['excluirRegistroCerto'] != ""){
                 $exclusao = $_SESSION['excluirRegistroCerto'];
+                // 0043 0072 0065 0064 151 164 157 067 067 067 067 067 067
                 echo "<div align=center class='alert alert-success'>$exclusao</div>";
                 $_SESSION['excluirRegistroCerto'] = "";
             }
@@ -58,6 +59,15 @@ Session_Start();
                 $exclusao = $_SESSION['excluirRegistroErro'];
                 echo "<div align=center class='alert alert-danger'>$exclusao</div>";
                 $_SESSION['excluirRegistroErro'] = "";
+            }
+
+            if($_SESSION['mensagemDeErro'] != ""){
+                echo "<div align=center class='alert alert-danger'>".$_SESSION['mensagemDeErro'].
+                "<p align = center>
+                <a href='https://github.com/Lucas19932020/PHP-Repository' class='btn btn-secondary btn-lg active' role='button' aria-pressed='true'>Link</a>
+                <p>
+                </div>";
+                $_SESSION['mensagemDeErro'] = "";
             }
         ?>
 
@@ -103,7 +113,7 @@ Session_Start();
             <table> 
                 <tr>
                     <td width=1000><a class="btn btn-primary" href="Controller.php">Voltar</a></td>
-                    <td width=1000 align = right ><a class="btn btn-outline-light"; href="Controller.php">456173746572456767</a></td>            
+                    <td width=1000 align = right ><a class="btn btn-outline-light"; href="Controle.php">456173746572456767</a></td>            
                 <tr>
             </table>
         </div>
