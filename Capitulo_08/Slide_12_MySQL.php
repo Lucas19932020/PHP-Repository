@@ -9,7 +9,7 @@
     <?php
         $con = mysqli_connect("localhost","root","");
         if(mysqli_connect_errno($con)){
-            echo "Erro ap cpmectar com a base de  dadps: " . mysqli_connect_errno();
+            echo "Erro ao conectar com a base de dados: " . mysqli_connect_errno();
         }else{
             //Criando base de dados
             $sql="CREATE DATABASE lp1";

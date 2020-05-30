@@ -7,16 +7,16 @@
 </head>
 <body bgcolor="555555">
     <?php
-        $con = mysqli_connect("localhost", "root", "", "lp1");
+        $con = mysqli_connect("localhost", "root", "", "vendas");
         if(mysqli_connect_errno($con)){
             echo "Erro: " . mysqli_connect_error();
         }else{
-            $sql = "INSERT INTO Pessoa VALUES('$_POST[nome]', '$_POST[sobrenome]', '$_POST[idade]')";
+            $sql = "DELETE FROM cliente WHERE Nome = ('$_POST[Nome]')";
             if (mysqli_query($con,$sql)){
-                echo "Pessoa inserida com sucesso!!!";
-                }else{
+                echo "Linha deletada com sucesso!!!";
+            }else{
                 echo "Erro: " . mysqli_error($con);
-        }
+            }
         mysqli_close($con);
         }
     ?>
