@@ -34,11 +34,11 @@
             if($m53cr37 === $_SESSION['_53cr37']){
                 header('Location: grade0.php');
             }else{
-            $_SESSION['mensagemDeErro'] = "Talvez você encontre alguma resposta clicando no botão abaixo:";
+            $_SESSION['MensagemDeErro'] = "Talvez você encontre alguma resposta clicando no botão abaixo:";
             header('Location: Registers.php');
             }
         }else{
-            $_SESSION['mensagemDeErro'] = "Erro de conexão com a base de Dados";
+            $_SESSION['MensagemDeErro'] = "Erro de conexão com a base de Dados";
         }
         mysqli_close($con);
      ?>

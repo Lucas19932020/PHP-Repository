@@ -61,13 +61,13 @@ Session_Start();
                 $_SESSION['excluirRegistroErro'] = "";
             }
 
-            if($_SESSION['mensagemDeErro'] != ""){
-                echo "<div align=center class='alert alert-danger'>".$_SESSION['mensagemDeErro'].
+            if($_SESSION['MensagemDeErro'] != ""){
+                echo "<div align=center class='alert alert-danger'>".$_SESSION['MensagemDeErro'].
                 "<p align = center>
                 <a href='https://github.com/Lucas19932020/PHP-Repository' class='btn btn-secondary btn-lg active' role='button' aria-pressed='true'>Link</a>
                 <p>
                 </div>";
-                $_SESSION['mensagemDeErro'] = "";
+                $_SESSION['MensagemDeErro'] = "";
             }
         ?>
 
@@ -117,5 +117,6 @@ Session_Start();
                 <tr>
             </table>
         </div>
+        
     </body>
 </html>

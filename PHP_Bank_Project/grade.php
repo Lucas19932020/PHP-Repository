@@ -5,11 +5,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	
 	<title>PHP Quiz</title>
+	<link href="imagem.css" rel="stylesheet">
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
+
 
 	<div id="page-wrap">
 
@@ -33,17 +35,14 @@
             
             echo "<div align = center>Você acertou $totalCorrect / 5 questões</div>";
 			
+	
 			if($totalCorrect === 5){
-				echo "<p align = center><br><br>Adicionar Gif W</p>";
+				include "paginaw.php";
 			}else if($totalCorrect >= 2 && $totalCorrect <= 4){
-				echo "<p align = center><br><br>Adicionar Gif ok</p>";
-				//Mal sabem o que aconteceria se o dedo fosse pressionado.
+				include "paginaok.php";
 			}else{
-				echo "<p align = center><br><br>Adicionar Gif P</p>";
-				//Full Metal é o que tem para hoje
+				include "paginaf.php";
 			}
-
-
 
         ?>
 	
